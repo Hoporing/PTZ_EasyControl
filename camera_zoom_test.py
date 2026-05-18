@@ -48,7 +48,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="카메라 줌 배율(CGI API) 제어 스크립트")
     parser.add_argument("-i", "--ip", required=True, help="카메라 IP 주소")
     parser.add_argument("-u", "--user", default="admin", help="아이디")
-    parser.add_argument("-p", "--password", default="admin1357", help="비밀번호")
+    parser.add_argument("-p", "--password", required=True, help="비밀번호")
 
     parser.add_argument(
         "-a", "--action", choices=["get", "set"], default="get")
